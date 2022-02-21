@@ -18,5 +18,24 @@ Caso deseje baixar o projeto ao invés de fazer o clone basta clicar no link aba
 
 ---
 
+## Como jogar:
+
+```python
+
+# obejetivo do jogo
+Encaixar todas as caixas em suas pontos correspondentes ('de mesma cor') simultaneamente
+
+"Obstáculo"
+as caixas se comportam de modos diferentes de acordo com o comando dado
+
+# Caixa Azul
+("A caixa azul executa o movimento EXATO referente ao comando pelo jogador")
+
+# Caixa vermelha
+("A caixa vermelha executa o movimento OPOSTO ao comando pelo jogador")
+```
+
+---
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
