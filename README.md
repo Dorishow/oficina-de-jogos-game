@@ -37,5 +37,11 @@ as caixas se comportam de modos diferentes de acordo com o comando dado
 
 ---
 
+## Jogar no itch io
+
+[Link do jogo no itch io](https://dorishow.itch.io/caixas-gemeas)
+
+---
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
