@@ -7,12 +7,11 @@
 extents = Vector2( 8, 8 )
 
 [node name="box" type="KinematicBody2D"]
-collision_layer = 2
-collision_mask = 2
+collision_layer = 3
+collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 8, 8 )
 shape = SubResource( 1 )
 
@@ -20,6 +19,7 @@ shape = SubResource( 1 )
 texture = ExtResource( 1 )
 offset = Vector2( 8, 8 )
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
+[node name="RayCast2D" type="RayCast2D" parent="." groups=["blueBox"]]
 position = Vector2( 8, 8 )
 cast_to = Vector2( 0, 16 )
+collide_with_areas = true
