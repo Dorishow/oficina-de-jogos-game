@@ -126,8 +126,8 @@ margin_right = 105.5
 margin_bottom = 29.0
 hint_tooltip = "Clique em ok para seguir para a fase seguinte"
 mouse_default_cursor_shape = 2
-window_title = "fase concluída"
-dialog_text = "parabéns, você finalizou a fase"
+window_title = "Fim de jogo"
+dialog_text = "Todas as fase foram concluídas"
 __meta__ = {
 "_edit_use_anchors_": false
 }
