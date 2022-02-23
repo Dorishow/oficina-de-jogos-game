@@ -11,12 +11,11 @@ var levels = [
 	"res://levels/level2/Level2.tscn",
 	"res://levels/level3/Level3.tscn",
 	"res://levels/level4/Level4.tscn",
+	"res://levels/level2/Level2.tscn",
 	]
 
 func _ready():
 	dialog.connect("confirmed", self, "on_confirmed")
-	var currentScene = get_tree().get_current_scene().get_name()
-	print(currentScene)
 	pass
 
 var winCondition = { 'red': false, 'blue': false}
@@ -37,10 +36,10 @@ func winGame():
 	
 	
 func on_confirmed():
-	var currentScene = get_tree().get_current_scene().get_name().to_int()
-	print('current scene: ', currentScene)
-	if currentScene < levels.size():
-		get_tree().change_scene(levels[currentScene])
+	var currentPath = get_tree().get_current_scene().filename
+	var indexOfCurrentPath = levels.find(currentPath, 0)
+	if indexOfCurrentPath + 1 < levels.size():
+		get_tree().change_scene(levels[indexOfCurrentPath + 1])
 	else:
 		print('Game over, all levels are clear')
 	pass
